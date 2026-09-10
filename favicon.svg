@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" role="img" aria-label="Logo HydroClean">
+  <defs>
+    <linearGradient id="dropGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5EC4F5"/>
+      <stop offset="55%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9CCC65"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="45%" stop-color="#FFF176"/>
+      <stop offset="100%" stop-color="#FBC02D"/>
+    </radialGradient>
+  </defs>
+  <path d="M110 18 C 62 90, 30 138, 30 172 a80 80 0 0 0 160 0 c 0-34 -32-82 -80-154 z" fill="url(#dropGrad)"/>
+  <circle cx="110" cy="100" r="22" fill="url(#sunGrad)"/>
+  <g stroke="#FBC02D" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <line x1="110" y1="68" x2="110" y2="75"/>
+    <line x1="83" y1="100" x2="76" y2="100"/>
+    <line x1="137" y1="100" x2="144" y2="100"/>
+    <line x1="91" y1="81" x2="86" y2="76"/>
+    <line x1="129" y1="81" x2="134" y2="76"/>
+    <line x1="91" y1="119" x2="86" y2="124"/>
+    <line x1="129" y1="119" x2="134" y2="124"/>
+  </g>
+  <path d="M85 135 Q 55 148, 55 195 Q 75 195, 92 175 Q 102 158, 100 140 Q 92 132, 85 135 Z" fill="url(#leafGrad)"/>
+  <circle cx="72" cy="162" r="2.5" fill="#1B5E20"/>
+  <circle cx="80" cy="178" r="2.5" fill="#1B5E20"/>
+  <circle cx="68" cy="188" r="2.5" fill="#1B5E20"/>
+  <path d="M110 128 Q 98 175, 110 218 Q 122 175, 110 128 Z" fill="url(#leafGrad)"/>
+  <circle cx="106" cy="158" r="2.5" fill="#1B5E20"/>
+  <circle cx="114" cy="175" r="2.5" fill="#1B5E20"/>
+  <circle cx="108" cy="192" r="2.5" fill="#1B5E20"/>
+  <circle cx="112" cy="208" r="2.5" fill="#1B5E20"/>
+  <path d="M135 135 Q 165 148, 165 195 Q 145 195, 128 175 Q 118 158, 120 140 Q 128 132, 135 135 Z" fill="url(#leafGrad)"/>
+  <circle cx="148" cy="162" r="2.5" fill="#1B5E20"/>
+  <circle cx="140" cy="178" r="2.5" fill="#1B5E20"/>
+  <circle cx="152" cy="188" r="2.5" fill="#1B5E20"/>
+</svg>

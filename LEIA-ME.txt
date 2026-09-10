@@ -1,0 +1,69 @@
+HydroClean — Site (versão startup de tecnologia sustentável)
+============================================================
+
+COMO ABRIR
+----------
+Abra "index.html" em qualquer navegador moderno. Não precisa instalar nada.
+Mantenha todos os arquivos juntos:
+
+  index.html
+  style.css
+  script.js
+  config.js
+  assets/logo.svg
+  assets/favicon.svg
+
+
+O QUE VOCÊ EDITA (arquivo: config.js)
+-------------------------------------
+Este é o ÚNICO arquivo que você precisa mexer.
+
+1) CONTATOS -> objeto "contato"
+   whatsapp / telefone: só dígitos com DDI+DDD (ex.: 5551999999999)
+   instagram: usuário sem @
+   email: e-mail do projeto
+   telefoneLabel: como o telefone aparece na tela
+
+2) FORMULÁRIO -> objeto "formulario"
+   modo: "demo" (mostra confirmação visual, sem backend)
+         "whatsapp" (abre o WhatsApp com os dados)
+         "email" (abre o app de e-mail com os dados)
+
+3) PRODUTOS -> array "produtos"
+   Edite nome, base (preço base R$), público, capacidade, dimensões e recursos.
+   A base dos modelos maiores é maior, garantindo coerência de preços.
+
+4) CONFIGURADOR / PREÇOS -> objeto "configurador"
+   - aplicacao: qual modelo cada tipo de uso recomenda.
+   - capacidade: cada opção tem "custo" (somado) e "modeloMin"
+     (capacidades maiores exigem pelo menos aquele modelo -> evita inversões).
+   - energia / monitoramento / instalacao: custo adicional de cada opção.
+   O preço = base(modelo) + capacidade + energia + monitoramento + instalação.
+   O modelo recomendado é o MAIOR entre o exigido pela aplicação e pela capacidade.
+
+5) RESULTADOS -> objeto "resultados"
+   São DADOS DEMONSTRATIVOS (rotulados como tal na tela).
+   Substitua "antes"/"depois" pelos resultados reais dos testes quando tiver.
+
+6) IMPACTO -> array "impacto"
+   Indicadores exibidos com contagem animada.
+
+
+DESTAQUES DA VERSÃO
+-------------------
+- Sol atmosférico realista (halo, brilho, reflexo e movimento sutil) em CSS.
+- Água animada em canvas (ondas, reflexos e partículas) no hero e no antes/depois.
+- Microalgas de fundo orgânicas: diatomáceas, filamentos e colônias, com rotação,
+  profundidade, agrupamento e brilho verde discreto.
+- "Como funciona": diagrama interativo com fluxo de partículas e explicação ao passar o mouse.
+- Produtos com renderização, especificações e tabela comparativa.
+- Configurador de orçamento com preços coerentes e valor animado.
+- Resultados com gráficos de barras animados (dados demonstrativos).
+- ODS 3, 6 e 7 em destaque; ODS 13 como contribuição complementar.
+- Formulário com confirmação visual ("Solicitação enviada com sucesso!").
+
+DESEMPENHO E ACESSIBILIDADE
+---------------------------
+- Respeita "prefers-reduced-motion" (desliga fundos/animações pesadas).
+- Reduz a densidade de partículas no celular e em dispositivos mais simples.
+- Pausa as animações de canvas quando a aba não está visível (economia de bateria).
